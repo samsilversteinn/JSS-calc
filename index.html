@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <title>Title</title>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!-- Bootstrap CSS v5.2.1 -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+    crossorigin="anonymous">
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <div class="container text-center">
+    <h1 class="text-info text-center pt-4">Sam Silverstein's Calculator!</h1>
+
+    <div class="row justify-content-center">
+      <div class="calc-container m-auto">
+        <!--Display for values-->
+        <div class="row justify-content-center">
+          <form name="calc pt-3">
+            <input type="text" id="entry" class="entry text-end" value="0" readonly>
+          </form>
+        </div>
+        <!--Buttons-->
+        <div class="row">
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(7)">7</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(8)">8</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(9)">9</button>
+          <button type="button" class="btn btn-success numBut" onclick="mathButPress('+')">+</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(4)">4</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(5)">5</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(6)">6</button>
+          <button type="button" class="btn btn-success numBut" onclick="mathButPress('-')">-</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(1)">1</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(2)">2</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(3)">3</button>
+          <button type="button" class="btn btn-success numBut" onclick="mathButPress('*')">*</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-danger numBut" onclick="clearButPress()">AC</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress(0)">0</button>
+          <button type="button" class="btn btn-primary numBut" onclick="numButPress('.')">.</button>
+          <button type="button" class="btn btn-success numBut" onclick="mathButPress('/')">/</button>
+        </div>
+        <div class="row">
+          <button type="button" class="btn btn-warning numBut" onclick="copyButPress()">MC</button>
+          <button type="button" class="btn btn-warning numBut" onclick="pasteButPress()">MP</button>
+          <button type="button" class="btn btn-info equalBut" onclick="equalButPress()">=</button>
+        </div>
+
+
+
+      </div>
+
+
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+    integrity="sha384-7VPbUDkoPSGFnVtYi0QogXtr74QeVeeIs99Qfg5YCF+TidwNdjvaKZX19NZ/e6oz" crossorigin="anonymous">
+    </script>
+    <script src="script.js"></script>
+</body>
+
+</html>
